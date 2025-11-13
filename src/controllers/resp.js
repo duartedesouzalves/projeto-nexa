@@ -19,12 +19,12 @@ rotaResposta.post("/respostas", async (req, res) => {
       questionario,
       usuario: {
         connect: {
-          id,
+          id: usuarioId,
         },
       },
       questionario: {
         connect: {
-          id,
+          id: questionarioId,
         },
       },
     },
