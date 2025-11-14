@@ -6,9 +6,12 @@ const { rotaResposta } = require("./controllers/resp");
 const { rotaChat } = require("./controllers/chat");
 const { rotaProfissional } = require("./controllers/profissionais");
 const { rotaMensagens } = require("./controllers/mens");
+const { rotaPaginas } = require("./controllers/Paginas");
 const server = express();
 
 server.use(express.json());
+server.use(express.static("assets"));
+server.use(rotaPaginas);
 server.use(rotaUsuario);
 server.use(rotaQuestionario);
 server.use(rotaResposta);
