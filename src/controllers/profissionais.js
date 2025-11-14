@@ -11,7 +11,7 @@ rotaProfissional.get("/profissionais", async (req, res) => {
 rotaProfissional.post("/profissionais", async (req, res) => {
   const { nome, contato, chat } = req.body;
 
-  await db.profissional.create({
+  await db.profissionais.create({
     data: {
       nome,
       contato,
@@ -30,9 +30,12 @@ rotaProfissional.delete("/profissionais/:id", async (req, res) => {
   res.json({ mensagem: "okay" });
 });
 
-rotaProfissional.put("/profissionais/id", async (req, res) => {
+rotaProfissional.put("/profissionais/:id", async (req, res) => {
   const id = Number(req.params.id);
   const data = {};
+
+  if (req.body.nome) data.nome = req.body.nome;
+  if (req.body.contato) data.contato = req.body.contato;
 
   await db.profissionais.update({
     where: { id },

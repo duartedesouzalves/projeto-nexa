@@ -29,7 +29,7 @@ rotaQuestionario.delete("/questionarios/:id", async (req, res) => {
   res.json({ mensagem: "okay" });
 });
 
-rotaQuestionario.put("/questionarios/id", async (req, res) => {
+rotaQuestionario.put("/questionarios/:id", async (req, res) => {
   const id = Number(req.params.id);
   const data = {};
 

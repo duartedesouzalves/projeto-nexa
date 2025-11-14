@@ -50,7 +50,7 @@ rotaUsuario.delete("/usuarios/:id", async (req, res) => {
   res.json({ mensagem: "okay" });
 });
 
-rotaUsuario.put("/usuarios/id", async (req, res) => {
+rotaUsuario.put("/usuarios/:id", async (req, res) => {
   const id = Number(req.params.id);
   const data = {};
 

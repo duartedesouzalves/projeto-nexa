@@ -41,7 +41,7 @@ rotaResposta.delete("/respostas/:id", async (req, res) => {
   res.json({ mensagem: "okay" });
 });
 
-rotaResposta.put("/respostas/id", async (req, res) => {
+rotaResposta.put("/respostas/:id", async (req, res) => {
   const id = Number(req.params.id);
   const data = {};
 
