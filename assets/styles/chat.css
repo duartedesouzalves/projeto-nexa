@@ -21,17 +21,23 @@
   display: flex;
   align-items: center;
 }
-.perfil {
+.perfil button {
   width: 4vw;
+  background-color: #c4c0fb;
+  border: 1px#C4C0FB solid;
 }
 .fotoprof {
   display: flex;
-  width: 3vw;
+  width: 4vw;
 }
-.icons img {
+.fotoprof button {
   display: flex;
   width: 3vw;
-  margin-left: 10px;
+  background-color: #dee1ff;
+  border: 1px #dee1ff solid;
+}
+.icons img {
+  width: 3vw;
   font-size: 18px;
   cursor: pointer;
 }
@@ -39,6 +45,14 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.funcoes button {
+  justify-content: flex-end;
+  background-color: #c4c0fb;
+  border: 1px#C4C0FB solid;
+  width: 3vw;
+}
+
 .chat {
   width: 100%;
   flex-direction: column;
@@ -48,15 +62,15 @@
   padding: 5px;
   border: 1px solid #aaa8c5;
 }
-.camera img {
+.camera button {
   display: flex;
-  width: 70%;
+  width: 2vw;
   flex-direction: row;
   align-items: flex-end;
 }
-.micro img {
+.micro button {
   display: flex;
-  width: 70%;
+  width: 2vw;
   flex-direction: row;
   align-items: flex-end;
 }
@@ -172,26 +186,24 @@
   height: 100vh;
 }
 .busca {
-  display: flex;
-  width: 81vw;
-  margin-bottom: 21px;
   width: 100%;
-  background-color: #ffffff;
-  padding: 5px;
-  border-radius: 20px;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  color: #ffffff;
-}
-
-.busca p {
   display: flex;
   align-items: center;
-  color: #a8a8a8;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px;
 }
-.busca img {
-  display: flex;
-  width: 2vw;
+
+.pesquisa img {
+  width: 4%;
+}
+
+.pesquisa input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
 }
 
 .quadrado-roxo {
