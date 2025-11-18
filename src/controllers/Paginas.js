@@ -27,7 +27,7 @@ rotaPaginas.get("/chat", async (req, res) => {
 });
 
 rotaPaginas.get("/contatos", async (req, res) => {
-  res.sendFile(join(__dirname, "..", "..", "pages", "contatos.html"));
+  res.sendFile(join(__dirname, "..", "..", "pages", "ctt.html"));
 });
 
 rotaPaginas.get("/configuracoes", async (req, res) => {
