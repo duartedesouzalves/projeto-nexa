@@ -11,7 +11,7 @@
 .area {
   display: flex;
   width: 300px;
-  background: #C4C0FB;
+  background: #c4c0fb;
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -20,12 +20,12 @@
   display: flex;
   align-items: center;
 }
-.perfil button{
+.perfil button {
   width: 4vw;
-  background-color: #C4C0FB;
+  background-color: #c4c0fb;
   border: 1px#C4C0FB solid;
 }
-.icons img{
+.icons img {
   display: flex;
   width: 3vw;
   font-size: 18px;
@@ -37,9 +37,9 @@
   justify-content: flex-end;
 }
 
-.funcoes button{
+.funcoes button {
   justify-content: flex-end;
-  background-color: #C4C0FB;
+  background-color: #c4c0fb;
   border: 1px#C4C0FB solid;
 }
 
@@ -47,39 +47,38 @@
   width: 100%;
   flex-direction: column;
   height: 90%;
-  background: #DEE1FF;
+  background: #dee1ff;
   border-radius: 10px;
   padding: 5px;
-  border: 1px solid #AAA8C5;
+  border: 1px solid #aaa8c5;
 }
 
-.conf button{
+.conf button {
   display: flex;
   align-items: center;
   width: 3vw;
   margin-bottom: 4px;
   gap: 15px;
-  color: #7773B1;
-  background-color: #DEE1FF;
-  border: 1px #DEE1FF solid; 
+  color: #7773b1;
+  background-color: #dee1ff;
+  border: 1px #dee1ff solid;
 }
-.nomes{
+.nomes {
   display: flex;
   flex-direction: row;
   gap: 10px;
   padding: 4px;
   align-items: center;
   margin-bottom: 4px;
-  color: #A8A8A8;
+  color: #a8a8a8;
   font-family: "Libre Baskerville", serif;
-
 }
 
 .conversa {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: #C4C0FB; 
+  background-color: #c4c0fb;
   padding: 10px 11px;
   border-radius: 10px;
 }
@@ -87,33 +86,32 @@
 .conversa img {
   position: absolute;
   top: 50%;
-  right: 10px; 
+  right: 10px;
   transform: translateY(-10%);
-  width: 50px; 
+  width: 50px;
   height: 50px;
 }
 
-
-.tema{
+.tema {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  color: #7672AE;
+  color: #7672ae;
 }
-.claro{
-  background-color: #C4C0FB;
+.claro {
+  background-color: #c4c0fb;
   color: #ffffff;
-  border: 40px ;
+  border: 40px;
   border-radius: 7px;
   text-align: center;
   font-size: 15px;
-  margin: 10px ;
+  margin: 10px;
   width: 4vw;
   padding: 3px;
 }
 
-.Inf{
+.Inf {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,53 +119,52 @@
   padding: 25px;
   gap: 10px;
 }
-.Inf button{
+.Inf button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #C4C0FB;
-  color: #7672AE;
+  background-color: #c4c0fb;
+  color: #7672ae;
   border: 50px;
   border-radius: 7px;
   font-size: 15px;
   width: 100%;
   padding: 3px;
-  background-color: #C4C0FB;
-  border: #C4C0FB solid;
+  background-color: #c4c0fb;
+  border: #c4c0fb solid;
 }
 .segundo_container {
   flex: 1;
-  background: #D9F7FF;
+  background: #d9f7ff;
   padding: 20px;
   width: 100vw;
   height: 100vh;
 }
-.busca {
-  display: flex;
-  width: 81vw;
-  margin-bottom: 21px;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 5px;
-  border-radius: 20px;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  color: #ffffff;
-}
 
-.busca p{
+.busca {
+  width: 100%;
   display: flex;
   align-items: center;
-  color: #A8A8A8;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px;
 }
-.busca img{
-  display: flex;
-  width: 2vw;
+
+.pesquisa img {
+  width: 4%;
 }
-.quadrado-roxo{
+
+.pesquisa input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+}
+.quadrado-roxo {
   grid-template-columns: repeat(4, 1fr);
   display: grid;
-  background-color: #B9BEF2;
+  background-color: #b9bef2;
   width: 90%;
   padding: 10px;
   margin: 20px;
@@ -178,14 +175,14 @@
   margin-left: 40px;
 }
 
-.coluna1{
+.coluna1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 150px;
 }
 .card1 {
-  background: #D0CDFF;
+  background: #d0cdff;
   border-radius: 12px;
   flex-direction: column;
   display: flex;
@@ -199,7 +196,7 @@
   height: 145px;
   border-radius: 5px;
 }
-.card1 img{
+.card1 img {
   display: flex;
   width: 40%;
   height: 100%;
@@ -210,32 +207,32 @@
   justify-content: center;
   text-align: center;
   font-weight: bold;
-  color: #7672AE;
+  color: #7672ae;
 }
 .cardProfissional {
   display: flex;
   text-align: center;
-  background: #D0CDFF;
+  background: #d0cdff;
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
   width: 100%;
   height: 305px;
-  color: #7672AE;
+  color: #7672ae;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.cardProfissional img{
+.cardProfissional img {
   width: 200px;
 }
-.coluna2{
+.coluna2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  grid-auto-rows: 150px
+  grid-auto-rows: 150px;
 }
 .card {
   display: flex;
@@ -243,18 +240,18 @@
   justify-content: center;
   border-radius: 12px;
   text-align: center;
-  background: #F7B35E;
+  background: #f7b35e;
   font-size: 45px;
   border-radius: 5px;
   padding: 10px;
   font-weight: bolder;
   width: 100%;
   height: 145px;
-  color: #994B9A;
+  color: #994b9a;
   font-family: "Cantora One", sans-serif;
 }
 
-.coluna3{
+.coluna3 {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -269,19 +266,19 @@
   border-radius: 5px;
   padding: 10px;
   font-weight: bolder;
-  color: #760306; 
+  color: #760306;
   font-size: 25px;
   width: 100%;
   height: 145px;
   flex-direction: column;
   font-family: "Libre Baskerville", serif;
 }
-.cardcolunas{
+.cardcolunas {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   text-align: center;
-  background: #F5CBE3;
+  background: #f5cbe3;
   border-radius: 5px;
   padding: 10px;
   font-weight: bold;
@@ -297,14 +294,13 @@
   height: 100%;
 }
 
-
 .cardDestaque {
   display: flex;
-  background: #FFEEF4;
+  background: #ffeef4;
   font-size: 35px;
   width: 100%;
   height: 464px;
-  color: #EB7699;
+  color: #eb7699;
   font-weight: bold;
   border-radius: 5px;
   align-items: center;
@@ -316,9 +312,9 @@
   font-weight: bolder;
   gap: 10px;
 }
-.cap{
+.cap {
   display: flex;
-  color: #EB7699;
+  color: #eb7699;
   justify-content: center;
   font-size: 10px;
 }
