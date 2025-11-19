@@ -14,9 +14,9 @@ function proximo() {
   localStorage.setItem(
     "formulario",
     JSON.stringify({
-      senha: document.querySelector("senha").value,
-      email: document.querySelector("email").value,
-      nome: document.querySelector("nome").value,
+      senha: document.querySelector("#senha").value,
+      email: document.querySelector("#email").value,
+      nome: document.querySelector("#nome").value,
     })
   );
 
