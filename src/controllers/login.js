@@ -4,11 +4,15 @@ const { db } = require("../db");
 const { chaveSecreta } = require("../authentication");
 const rotaLogin = Router();
 
+rotaLogin.get("/api/usuarios", (req, res) => {
+  res.send();
+});
+
 rotaLogin.post("/api/login", async (req, res) => {
-  const { email, senha } = req.body;
+  const { email, nome, senha } = req.body;
   console.log("oie");
   const usuario = await db.usuario.findFirst({
-    where: { email },
+    where: { email, nome, senha },
   });
   console.log(usuario);
   if (!usuario) {
