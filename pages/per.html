@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/per.css" />
-    <script src="../scripts/per.js"></script>
+    <script src="../scripts/per.js" defer></script>
     <title>NEXA (personalizar)</title>
   </head>
   <body>
@@ -22,19 +22,23 @@
       </div>
 
       <div class="apelido">
-        <input type="text" placeholder="Apelido" />
+        <input id="apelido" type="text" placeholder="Apelido" />
       </div>
 
       <div class="data">
-        <input type="text" placeholder="Data de Nascimento" />
+        <input
+          id="data_nascimento"
+          type="text"
+          placeholder="Data de Nascimento"
+        />
       </div>
 
       <div class="phone">
-        <input type="text" placeholder="Telefone" />
+        <input id="telefone" type="text" placeholder="Telefone" />
       </div>
 
       <div class="local">
-        <input type="text" placeholder="Localização" />
+        <input id="local" type="text" placeholder="Localização" />
       </div>
 
       <div class="tema">
@@ -58,9 +62,7 @@
           <button>SELECIONE UMA FOTO</button>
         </div>
         <div class="prox">
-          <a href="/questionario">
-            <button>Próximo</button>
-          </a>
+          <button onclick="proximo()">Próximo</button>
         </div>
       </div>
     </div>
