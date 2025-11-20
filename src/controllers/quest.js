@@ -7,19 +7,36 @@ rotaQuestionario.get("/questionarios", async (req, res) => {
   res.json(questionarios);
 });
 
+// rotaQuestionario.post("/questionarios", async (req, res) => {
+//   const { titulo, enunciado, Resposta } = req.body;
+
+//   await db.questionario.create({
+//     data: {
+//       titulo,
+//       enunciado,
+//       Resposta,
+//     },
+//   });
+
+//   res.json({ mensagem: "okay" });
+// });
+
 rotaQuestionario.post("/questionarios", async (req, res) => {
-  const { titulo, enunciado, Resposta } = req.body;
-
-  await db.questionario.create({
-    data: {
-      titulo,
-      enunciado,
-      Resposta,
-    },
-  });
-
-  res.json({ mensagem: "okay" });
+  try {
+    const { titulo, enunciado, resposta } = req.body; // "resposta" minúsculo
+    await db.questionario.create({
+      data: {
+        titulo,
+        enunciado,
+        Resposta: resposta,
+      },
+    });
+    res.json({ mensagem: "okay" });
+  } catch (error) {
+    res.status(400).json({ erro: error.message });
+  }
 });
+
 
 rotaQuestionario.delete("/questionarios/:id", async (req, res) => {
   const id = Number(req.params.id);
@@ -29,7 +46,7 @@ rotaQuestionario.delete("/questionarios/:id", async (req, res) => {
   res.json({ mensagem: "okay" });
 });
 
-rotaQuestionario.put("/questionarios/:id", async (req, res) => {
+rotaQuestionario.put("/api/questionarios/:id", async (req, res) => {
   const id = Number(req.params.id);
   const data = {};
 
@@ -42,3 +59,12 @@ rotaQuestionario.put("/questionarios/:id", async (req, res) => {
 });
 
 module.exports = { rotaQuestionario };
+
+
+await prisma.resposta.create({
+  data: {
+    resposta: "Texto da resposta do usuário",
+    usuarioId: 1,           // ID do usuário que respondeu
+    questionarioId: 2       // ID do questionário respondido
+  }
+});
