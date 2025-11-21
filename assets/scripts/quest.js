@@ -27,9 +27,6 @@ async function Entre() {
   window.location.href = "/questionario";
 }
 
-
-
-
 // function Entre() {
 //   // salva
 //   localStorage.setItem(
@@ -44,4 +41,3 @@ async function Entre() {
 
 // // pega
 // const dados = JSON.parse(localStorage.getItem("formulario"));
-
