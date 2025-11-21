@@ -37,7 +37,6 @@ rotaQuestionario.post("/questionarios", async (req, res) => {
   }
 });
 
-
 rotaQuestionario.delete("/questionarios/:id", async (req, res) => {
   const id = Number(req.params.id);
   await db.questionario.delete({
@@ -59,12 +58,3 @@ rotaQuestionario.put("/api/questionarios/:id", async (req, res) => {
 });
 
 module.exports = { rotaQuestionario };
-
-
-await prisma.resposta.create({
-  data: {
-    resposta: "Texto da resposta do usuário",
-    usuarioId: 1,           // ID do usuário que respondeu
-    questionarioId: 2       // ID do questionário respondido
-  }
-});
