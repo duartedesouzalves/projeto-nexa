@@ -1,4 +1,4 @@
-const dados = JSON.parse(localStorage.getItem("formulario"));
+const dados = JSON.parse(localStorage.getItem("formulario") || "{}");
 
 async function Entre() {
   dados.insegurancas = document.querySelector("#insegurancas").value;
@@ -11,33 +11,24 @@ async function Entre() {
   // salva
   localStorage.setItem("formulario", JSON.stringify(dados));
 
-  const resposta = await fetch("/questionarios", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(dados),
-  });
+  try {
+    const resposta = await fetch("/questionarios", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dados),
+    });
 
-  if (!resposta.ok) {
-    alert("erro");
-    return;
+    if (!resposta.ok) {
+      const erro = await resposta.json().catch(() => ({}));
+      alert(erro.erro || "erro ao salvar as respostas");
+      return;
+    }
+
+    window.location.href = "/questionario";
+  } catch (e) {
+    console.error(e);
+    alert("erro de conexão com o servidor");
   }
-
-  window.location.href = "/questionario";
 }
-
-// function Entre() {
-//   // salva
-//   localStorage.setItem(
-//     "formulario",
-//     JSON.stringify({
-//       senha: document.querySelector("#resposta").value;
-//     })
-//   );
-
-//   window.location.href = "/questionario";
-// }
-
-// // pega
-// const dados = JSON.parse(localStorage.getItem("formulario"));
