@@ -2,6 +2,10 @@ const { Router } = require("express");
 const { join } = require("path");
 const rotaPaginas = Router();
 
+rotaPaginas.get("/", async (req, res) => {
+  res.sendFile(join(__dirname, "..", "..", "pages", "cadastro.html"));
+});
+
 rotaPaginas.get("/cadastro", async (req, res) => {
   res.sendFile(join(__dirname, "..", "..", "pages", "cadastro.html"));
 });
