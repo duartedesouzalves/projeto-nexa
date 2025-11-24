@@ -8,40 +8,27 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url= env("DATABASE_URL")
+  url      = env("DATABASE_URL")
 }
 
 model Usuario {
-  id              Int        @id @default(autoincrement())
+  id              Int      @id @default(autoincrement())
   nome            String
   apelido         String
-  gmail           String     @unique
+  email           String   @unique
   senha           String
-  rua             String
   telefone        String
   foto_de_perfil  String?
   cidade          String
-  estado          String
-  bairro          String
   data_nascimento DateTime
-  Resposta        Resposta[]
-  Chat            Chat[]
-}
+  insegurancas    String
+  autoestima      String
+  confianca       String
+  medos           String
+  avaliacao       String
+  mudancas        String
 
-model Questionario {
-  id        Int        @id @default(autoincrement())
-  titulo    String
-  enunciado String
-  Resposta  Resposta[]
-}
-
-model Resposta {
-  id             Int          @id @default(autoincrement())
-  resposta       String
-  usuarioId      Int
-  usuario        Usuario      @relation(fields: [usuarioId], references: [id])
-  questionarioId Int
-  questionario   Questionario @relation(fields: [questionarioId], references: [id])
+  Chat Chat[]
 }
 
 model Chat {
@@ -52,20 +39,17 @@ model Chat {
   usuario         Usuario       @relation(fields: [usuarioId], references: [id])
   profissionaisId Int
   profissionais   Profissionais @relation(fields: [profissionaisId], references: [id])
-  mensagens       Mensagem[]    // 
+  mensagens       Mensagem[] // 
 }
-
 
 model Mensagem {
-  id        Int      @id @default(autoincrement())
-  data      String
-  mensagem  String
-  chatId    Int
-  horario   String
-  chat      Chat?    @relation(fields: [chatId], references: [id])
+  id       Int    @id @default(autoincrement())
+  data     String
+  mensagem String
+  chatId   Int
+  horario  String
+  chat     Chat?  @relation(fields: [chatId], references: [id])
 }
-
-
 
 model Profissionais {
   id      Int    @id @default(autoincrement())
