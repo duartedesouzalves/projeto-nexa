@@ -7,34 +7,16 @@ rotaQuestionario.get("/questionarios", async (req, res) => {
   res.json(questionarios);
 });
 
-// rotaQuestionario.post("/questionarios", async (req, res) => {
-//   const { titulo, enunciado, Resposta } = req.body;
-
-//   await db.questionario.create({
-//     data: {
-//       titulo,
-//       enunciado,
-//       Resposta,
-//     },
-//   });
-
-//   res.json({ mensagem: "okay" });
-// });
-
 rotaQuestionario.post("/questionarios", async (req, res) => {
-  try {
-    const { titulo, enunciado, resposta } = req.body; // "resposta" minúsculo
-    await db.questionario.create({
-      data: {
-        titulo,
-        enunciado,
-        Resposta: resposta,
-      },
-    });
-    res.json({ mensagem: "okay" });
-  } catch (error) {
-    res.status(400).json({ erro: error.message });
-  }
+  const { titulo, enunciado, resposta } = req.body; // "resposta" minúsculo
+  await db.questionario.create({
+    data: {
+      titulo,
+      enunciado,
+      Resposta: resposta,
+    },
+  });
+  res.json({ mensagem: "okay" });
 });
 
 rotaQuestionario.delete("/questionarios/:id", async (req, res) => {
