@@ -36,9 +36,9 @@ model Chat {
   mensagem        String
   data            DateTime
   usuarioId       Int
-  usuario         Usuario       @relation(fields: [usuarioId], references: [id])
+  usuario         Usuario       @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
   profissionaisId Int
-  profissionais   Profissionais @relation(fields: [profissionaisId], references: [id])
+  profissionais   Profissionais @relation(fields: [profissionaisId], references: [id], onDelete: Cascade)
   mensagens       Mensagem[] // 
 }
 
@@ -48,7 +48,7 @@ model Mensagem {
   mensagem String
   chatId   Int
   horario  String
-  chat     Chat?  @relation(fields: [chatId], references: [id])
+  chat     Chat?  @relation(fields: [chatId], references: [id], onDelete: Cascade)
 }
 
 model Profissionais {
