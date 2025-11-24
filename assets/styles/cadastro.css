@@ -29,11 +29,6 @@
   border: #42a1a1;
 }
 
-.cadastro h1 {
-  background: none;
-  margin: 0;
-}
-
 #espaco {
   display: flex;
   justify-content: center;
@@ -53,6 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #3f848c;
 }
 
 #redes {
@@ -69,12 +65,13 @@
   border-radius: 20px;
 }
 
-.google button {
+/* Correção importante */
+.google {
   border-radius: 25px;
-  border: 1px #ffff solid;
+  border: 1px #fff solid;
 }
 
-.facebook button {
+.facebook {
   border-radius: 25px;
-  border: 1px #ffff solid;
+  border: 1px #fff solid;
 }
