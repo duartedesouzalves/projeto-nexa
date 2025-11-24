@@ -1,5 +1,5 @@
 const dados = JSON.parse(localStorage.getItem("formulario") || "{}");
-
+console.log(dados);
 async function Entre() {
   dados.insegurancas = document.querySelector("#insegurancas").value;
   dados.autoestima = document.querySelector("#autoestima").value;
@@ -10,16 +10,17 @@ async function Entre() {
 
   // salva
   localStorage.setItem("formulario", JSON.stringify(dados));
+  console.log(dados);
 
   try {
-    const resposta = await fetch("/questionarios", {
+    const resposta = await fetch("/usuarios", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(dados),
     });
-
+    return;
     if (!resposta.ok) {
       const erro = await resposta.json().catch(() => ({}));
       alert(erro.erro || "erro ao salvar as respostas");
