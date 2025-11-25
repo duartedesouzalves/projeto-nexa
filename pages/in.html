@@ -9,36 +9,39 @@
     <script src="/scripts/in.js" defer></script>
     <title>NEXA (introdução)</title>
   </head>
+
   <body>
-    <div class="logo">
-      <img src="../images/logo.png" alt="" height="200px" />
-    </div>
+    <header class="logo">
+      <img src="../images/logo.png" alt="Logo NEXA" height="200" />
+    </header>
 
-    <div class="opcoes">
-      <div class="email">
-        <input id="email" type="text" placeholder="Email" />
-      </div>
+    <main>
+      <section class="opcoes">
+        <div class="email">
+          <input id="email" type="text" placeholder="Email" />
+        </div>
 
-      <div class="nome-usuario">
-        <input id="nome" type="text" placeholder="Nome de Usuário" />
-      </div>
+        <div class="nome-usuario">
+          <input id="nome" type="text" placeholder="Nome de Usuário" />
+        </div>
 
-      <div class="senha">
-        <input id="senha" type="password" placeholder="Senha" />
-      </div>
+        <div class="senha">
+          <input id="senha" type="password" placeholder="Senha" />
+        </div>
 
-      <div class="mostrar-senha">
-        <p>Mostrar senha</p>
-        <button onclick="senha()">
-          <img src="../images/quadradinho.svg" alt="" />
-        </button>
-      </div>
-    </div>
+        <div class="mostrar-senha">
+          <p>Mostrar senha</p>
+          <button onclick="senha()" aria-label="Mostrar ou ocultar senha">
+            <img src="../images/quadradinho.svg" alt="" />
+          </button>
+        </div>
+      </section>
 
-    <div class="botao">
-      <div class="prox">
-        <button onclick="proximo()">Próximo</button>
-      </div>
-    </div>
+      <section class="botao">
+        <div class="prox">
+          <button onclick="proximo()">Próximo</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
