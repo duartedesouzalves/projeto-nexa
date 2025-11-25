@@ -1,125 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/chat.css">
-    <script src="../scripts/chat.js"></script>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/chat.css" />
+    <script src="../scripts/chat.js" defer></script>
     <title>CHAT NEXA</title>
-</head>
-<body>
+  </head>
 
-    
-  <div class="container">
-
-   
-    <aside class="area">
-      <div class="icones">
-        <div class="perfil">
-          <button><img src="../images/circle-user-regular-full.svg" alt="" srcset=""></button>
-        </div>
-        <div class="icons">
-          <div class="funcoes">
-
-            <a href="/configuracoes">
-            <button><img src="../images/gear.svg" alt="" srcset=""></button>
-          </a>
-
-            <a href="/contatos">
-            <button><img src="../images/phone2.svg" alt="" srcset=""></button>
-          </a>
+  <body>
+    <div class="container">
+      <aside class="area">
+        <section class="icones">
+          <div class="perfil">
+            <button>
+              <img src="../images/circle-user-regular-full.svg" alt="Perfil" />
+            </button>
           </div>
-        </div>
-      </div>
 
-      <div class="conversa">
-        <img src="../images/messagecontorno.svg" alt="" srcset="">
-      </div>
-      
-      <div class="chat">
-        <div class="chat-header">
-          <div class="fotoprof">
-           <button><img src="../images/circle-user-regular-full.svg" alt="" srcset=""></div></button>
-          <p class="nome">Dra. Franciny</p>
-        </div>
-        
-        <div class="mensagens">
-          <p class="data">27 de setembro de 2025</p>
-        </div>
+          <nav class="icons">
+            <div class="funcoes">
+              <a href="/configuracoes">
+                <button>
+                  <img src="../images/gear.svg" alt="Configurações" />
+                </button>
+              </a>
 
-        <div id="cumprimento">
-          <div class="mensagem_enviada">
-            <p>Oi, Boa Tarde!</p>
+              <a href="/contatos">
+                <button>
+                  <img src="../images/phone2.svg" alt="Contatos" />
+                </button>
+              </a>
+            </div>
+          </nav>
+        </section>
+
+        <section class="conversa">
+          <img src="../images/messagecontorno.svg" alt="Conversa" />
+        </section>
+
+        <section class="chat">
+          <header class="chat-header">
+            <div class="fotoprof">
+              <button>
+                <img
+                  src="../images/circle-user-regular-full.svg"
+                  alt="Foto da profissional"
+                />
+              </button>
+            </div>
+            <p class="nome">Dra. Franciny</p>
+          </header>
+
+          <section class="mensagens">
+            <p class="data">27 de setembro de 2025</p>
+          </section>
+
+          <section id="cumprimento">
+            <article class="mensagem_enviada">
+              <p>Oi, Boa Tarde!</p>
+            </article>
+
+            <article class="mensagem_enviada2">
+              <p>Como você está se sentindo hoje?</p>
+            </article>
+
+            <time class="hora">04:00</time>
+          </section>
+
+          <footer class="chat-input">
+            <input type="text" placeholder="+ Digite" />
+
+            <div class="camera">
+              <button>
+                <img src="../images/camera.svg" alt="Enviar foto" />
+              </button>
+            </div>
+
+            <div class="micro">
+              <button>
+                <img src="../images/microfone.svg" alt="Gravar áudio" />
+              </button>
+            </div>
+          </footer>
+        </section>
+      </aside>
+
+      <main class="segundo_container">
+        <section class="busca">
+          <div class="pesquisa">
+            <img src="../images/pesquisa.svg" alt="Pesquisar" />
+            <input type="text" placeholder="O que você procura?" />
           </div>
-          <div class="mensagem_enviada2">
-            <p>Como você está se sentindo hoje?</p>
+        </section>
+
+        <section class="quadrado-roxo">
+          <div class="coluna1">
+            <article class="card1">
+              <img src="../images/calendar.svg" alt="Calendário" />
+              <div class="frase1">Como está se sentindo hoje?</div>
+            </article>
+
+            <article class="cardProfissional">
+              <img src="../images/profissional.png" alt="Profissional" />
+              Profissional
+            </article>
           </div>
-          <span class="hora">04:00</span>
 
+          <div class="coluna2">
+            <article class="card">Honre quem você é</article>
 
-      </div>
-      
-      <div class="chat-input">
-        <input type="text" placeholder="+ Digite">
-        <div class="camera"> 
-          <button>
-          <img src="../images/camera.svg" alt="" srcset=""> </div>
-          </button>
-        <div class="micro">
-          <button><img src="../images/microfone.svg" alt="" srcset=""></button>
-        </div>     
-      </div>
+            <article class="cardmaior">Seja você. Por você. Para você.</article>
 
-    
-    </aside>
-
-    <main class="segundo_container">
-      
-      <div class="busca">
-        <div class="pesquisa"><img src="../images/pesquisa.svg" alt="" srcset=""> <input type="text" placeholder="O que você procura?"></div>
-      </div>
-
-      <section class="quadrado-roxo">
-
-        <div class="coluna1"> 
-          <div class="card1">
-            <img src="../images/calendar.svg" alt="" srcset="">
-            <div class="frase1">Como está se sentindo hoje? </div>
+            <article class="cardcolunas">
+              <img src="../images/espelho.svg" alt="Espelho" />
+              Você é linda
+            </article>
           </div>
-          <div class="cardProfissional"> 
-            <img src="../images/profissional.png" alt="" srcset="">
-            Profissional
+
+          <div class="coluna3">
+            <article class="cardDestaque">
+              <img src="../images/ribbon.svg" alt="Fita" />
+              Você é forte e corajosa
+              <div class="cap">Josué 1:9</div>
+            </article>
           </div>
-        </div>
-
-        <div class="coluna2"> 
-          <div class="card">Honre quem você é</div>
-          <div class="cardmaior">Seja você. Por você. Para você.</div>
-          <div class="cardcolunas">
-            <img src="../images/espelho.svg" alt="" srcset="">
-            Você é linda</div>
-        </div>
-        
-        <divc class="coluna3">
-          <div class="cardDestaque">
-            <img src="../images/ribbon.svg" alt="" srcset="">
-            Você é forte e corajosa
-            <div class="cap"> Josué 1:9</div>
-          </div>
-          
-        </div>
-
-      </section>
-
-      
-      
-
-    </main>
-  </div>
-</body>
-</html>
-
-    
-</body>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
