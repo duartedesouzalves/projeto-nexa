@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,64 +7,72 @@
     <link rel="stylesheet" href="../styles/per.css" />
     <script src="../scripts/per.js" defer></script>
     <title>NEXA (personalizar)</title>
-  </head>
-  <body>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap"
       rel="stylesheet"
     />
+  </head>
 
-    <div class="esquerdo">
-      <div class="persona">
-        <h2>Personalizar seu perfil:</h2>
-      </div>
+  <body>
+    <main class="container">
+      <!-- LADO ESQUERDO -->
+      <section class="esquerdo">
+        <header class="persona">
+          <h2>Personalizar seu perfil:</h2>
+        </header>
 
-      <div class="apelido">
-        <input id="apelido" type="text" placeholder="Apelido" />
-      </div>
-
-      <div class="data">
-        <input
-          id="data_nascimeto"
-          type="date"
-          placeholder="Data de Nascimento"
-        />
-      </div>
-
-      <div class="phone">
-        <input id="telefone" type="text" placeholder="Telefone" />
-      </div>
-
-      <div class="local">
-        <input id="local" type="text" placeholder="Localização" />
-      </div>
-
-      <div class="tema">
-        <p>Tema</p>
-      </div>
-
-      <div class="cores">
-        <div class="corroxo">
-          <img src="../images/sun.svg" alt="" />
+        <!-- CAMPOS -->
+        <div class="apelido">
+          <input id="apelido" type="text" placeholder="Apelido" />
         </div>
-      </div>
-    </div>
 
-    <div class="direita">
-      <div class="foto">
-        <img src="../images/user.svg" alt="" />
-      </div>
+        <div class="data">
+          <input
+            id="data_nascimeto"
+            type="date"
+            placeholder="Data de Nascimento"
+          />
+        </div>
 
-      <div class="div">
-        <div class="perfil">
-          <button>SELECIONE UMA FOTO</button>
+        <div class="phone">
+          <input id="telefone" type="text" placeholder="Telefone" />
         </div>
-        <div class="prox">
-          <button onclick="proximo()">Próximo</button>
+
+        <div class="local">
+          <input id="local" type="text" placeholder="Localização" />
         </div>
-      </div>
-    </div>
+
+        <!-- TEMA -->
+        <div class="tema">
+          <p>Tema</p>
+        </div>
+
+        <div class="cores">
+          <div class="corroxo">
+            <img src="../images/sun.svg" alt="Selecionar tema roxo" />
+          </div>
+        </div>
+      </section>
+
+      <!-- LADO DIREITO -->
+      <aside class="direita">
+        <div class="foto">
+          <img src="../images/user.svg" alt="Imagem padrão de usuário" />
+        </div>
+
+        <div class="div">
+          <div class="perfil">
+            <button type="button">SELECIONE UMA FOTO</button>
+          </div>
+
+          <div class="prox">
+            <button type="button" onclick="proximo()">Próximo</button>
+          </div>
+        </div>
+      </aside>
+    </main>
   </body>
 </html>
