@@ -32,12 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px #67a4b4 solid;
-
   border-top: 1px solid #67a4b4;
-  /* padding-top: 5px;
-  justify-items: start;
-  align-items: stretch;
-  justify-content: space-evenly; */
 }
 
 .nome-usuario input {
