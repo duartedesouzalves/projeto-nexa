@@ -4,19 +4,23 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
 .container {
   display: flex;
   width: 100%;
 }
+
+/* MENU LATERAL */
 .area {
   display: flex;
   width: 300px;
   height: 100vh;
   background: #c4c0fb;
-  display: flex;
   flex-direction: column;
   padding: 15px;
 }
+
+/* HEADER DO MENU */
 .icones {
   display: flex;
   align-items: center;
@@ -25,7 +29,7 @@
 .perfil button {
   width: 4vw;
   background-color: #c4c0fb;
-  border: 1px#C4C0FB solid;
+  border: 1px #c4c0fb solid;
 }
 
 .icons img {
@@ -38,9 +42,10 @@
 .funcoes button {
   justify-content: flex-end;
   background-color: #c4c0fb;
-  border: 1px#C4C0FB solid;
+  border: 1px #c4c0fb solid;
 }
 
+/* PROFISSIONAIS */
 .Profissionais {
   width: 100%;
   flex-direction: column;
@@ -50,6 +55,7 @@
   padding: 5px;
   border: 1px solid #aaa8c5;
 }
+
 .lista {
   display: flex;
   justify-content: center;
@@ -57,6 +63,13 @@
   font-size: 10px;
   color: #736eb3;
 }
+
+/* lista de nomes */
+.chat-header {
+  list-style: none;
+  padding: 0;
+}
+
 .chat-header img {
   display: flex;
   width: 20%;
@@ -76,6 +89,7 @@
   font-weight: bold;
 }
 
+/* ÍCONE DO TELEFONE */
 .conversa {
   position: relative;
   display: flex;
@@ -94,32 +108,24 @@
   height: 50px;
 }
 
+/* CONTEÚDO PRINCIPAL */
 .segundo_container {
   flex: 1;
   background: #d9f7ff;
   padding: 20px;
   width: 100%;
 }
+
+/* BUSCA */
 .busca {
   display: flex;
-  width: 81vw;
-  margin-bottom: 21px;
   width: 100%;
+  align-items: center;
   background-color: #ffffff;
   padding: 5px;
   border-radius: 20px;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  color: #ffffff;
-}
-
-.busca {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 5px;
+  margin-bottom: 21px;
 }
 
 .pesquisa img {
@@ -133,6 +139,8 @@
   font-size: 14px;
   background: transparent;
 }
+
+/* GRID PRINCIPAL */
 .quadrado-roxo {
   display: grid;
   background-color: #b9bef2;
@@ -146,12 +154,14 @@
   margin-left: 40px;
 }
 
+/* COLUNA 1 */
 .coluna1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 150px;
 }
+
 .card1 {
   background: #d0cdff;
   border-radius: 12px;
@@ -165,13 +175,14 @@
   font-size: 14px;
   width: 100%;
   height: 145px;
-  border-radius: 5px;
 }
+
 .card1 img {
   display: flex;
   width: 40%;
   height: 100%;
 }
+
 .frase1 {
   display: flex;
   align-items: center;
@@ -180,6 +191,8 @@
   font-weight: bold;
   color: #7672ae;
 }
+
+/* CARD PROFISSIONAL */
 .cardProfissional {
   display: flex;
   text-align: center;
@@ -196,15 +209,19 @@
   align-items: center;
   gap: 10px;
 }
+
 .cardProfissional img {
   width: 200px;
 }
+
+/* COLUNA 2 */
 .coluna2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 150px;
 }
+
 .card {
   display: flex;
   align-items: center;
@@ -213,7 +230,6 @@
   text-align: center;
   background: #f7b35e;
   font-size: 45px;
-  border-radius: 5px;
   padding: 10px;
   font-weight: bolder;
   width: 100%;
@@ -222,12 +238,14 @@
   font-family: "Cantora One", sans-serif;
 }
 
+/* COLUNA 3 */
 .coluna3 {
   display: flex;
   flex-direction: column;
   gap: 15px;
   grid-auto-rows: 150px;
 }
+
 .cardmaior {
   display: flex;
   align-items: center;
@@ -244,6 +262,7 @@
   flex-direction: column;
   font-family: "Libre Baskerville", serif;
 }
+
 .cardcolunas {
   display: flex;
   align-items: center;
@@ -256,15 +275,17 @@
   font-size: 14px;
   width: 100%;
   height: 145px;
-  color: #000000;
+  color: #000;
   flex-direction: column;
 }
+
 .cardcolunas img {
   display: flex;
   width: 40%;
   height: 100%;
 }
 
+/* CARD GRANDE */
 .cardDestaque {
   display: flex;
   background: #ffeef4;
@@ -280,15 +301,16 @@
   font-family: "Libre Baskerville", serif;
   flex-direction: column;
   text-align: center;
-  font-weight: bolder;
   gap: 10px;
 }
+
 .cap {
   display: flex;
   color: #eb7699;
   justify-content: center;
   font-size: 10px;
 }
+
 .cardDestaque img {
   display: flex;
   width: 40%;
