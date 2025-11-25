@@ -7,65 +7,94 @@
     <link rel="stylesheet" href="../styles/quest.css" />
     <script src="../scripts/quest.js"></script>
 
-    <title>NEXA (questionario)</title>
+    <title>NEXA (questionário)</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <div class="perfil">
-      <button><img src="../images/user.svg" alt="" /></button>
-    </div>
+    <!-- PERFIL NO TOPO -->
+    <header class="perfil">
+      <button aria-label="Perfil">
+        <img src="../images/user.svg" alt="Ícone de usuário" />
+      </button>
+    </header>
 
-    <div class="titulo">
+    <!-- TÍTULO -->
+    <section class="titulo">
       <h1>O que você sente?</h1>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
-        rel="stylesheet"
-      />
-    </div>
+    </section>
 
-    <div class="questionario">
-      <div class="perguntas1">
-        <p>Quais são suas maiores inseguranças?</p>
-        <div class="inseguranças">
-          <input id="insegurancas" type="text" placeholder="Responda aqui" />
+    <!-- QUESTIONÁRIO -->
+    <main>
+      <form class="questionario">
+        <!-- COLUNA 1 -->
+        <section class="perguntas1">
+          <div>
+            <p>Quais são suas maiores inseguranças?</p>
+            <div class="inseguranças">
+              <input
+                id="insegurancas"
+                type="text"
+                placeholder="Responda aqui"
+              />
+            </div>
+          </div>
+
+          <div>
+            <p>O que mais afeta sua autoestima?</p>
+            <div class="autoestima">
+              <input id="autoestima" type="text" placeholder="Responda aqui" />
+            </div>
+          </div>
+
+          <div>
+            <p>Você costuma se sentir confiante?</p>
+            <div class="confiança">
+              <input id="confianca" type="text" placeholder="Responda aqui" />
+            </div>
+          </div>
+        </section>
+
+        <!-- COLUNA 2 -->
+        <section class="perguntas2">
+          <div>
+            <p>Quais são seus maiores medos?</p>
+            <div class="medo">
+              <input id="medos" type="text" placeholder="Responda aqui" />
+            </div>
+          </div>
+
+          <div>
+            <p>Como você avalia sua autoestima de 1 a 10?</p>
+            <div class="avaliação">
+              <input id="avaliacao" type="text" placeholder="Responda aqui" />
+            </div>
+          </div>
+
+          <div>
+            <p>O que você gostaria de mudar em si?</p>
+            <div class="melhoras">
+              <input id="mudancas" type="text" placeholder="Responda aqui" />
+            </div>
+          </div>
+        </section>
+      </form>
+
+      <!-- BOTÃO FINAL -->
+      <footer class="entre">
+        <div class="botao">
+          <a href="/tema">
+            <button type="button" onclick="Entre()">Entre</button>
+          </a>
         </div>
-
-        <p>O que mais afeta sua autoestima?</p>
-        <div class="autoestima">
-          <input id="autoestima" type="text" placeholder="Responda aqui" />
-        </div>
-
-        <p>Você costuma se sentir confiante?</p>
-        <div class="confiança">
-          <input id="confianca" type="text" placeholder="Responda aqui" />
-        </div>
-      </div>
-
-      <div class="perguntas2">
-        <p>Quais são seus maiores medos?</p>
-        <div class="medo">
-          <input id="medos" type="text" placeholder="Responda aqui" />
-        </div>
-
-        <p>Como você avalia sua autoestima de 1 a 10?</p>
-        <div class="avaliação">
-          <input id="avaliacao" type="text" placeholder="Responda aqui" />
-        </div>
-
-        <p>O que você gostaria de mudar em si?</p>
-        <div class="melhoras">
-          <input id="mudancas" type="text" placeholder="Responda aqui" />
-        </div>
-      </div>
-    </div>
-
-    <div class="entre">
-      <div class="botao">
-        <a href="/tema">
-          <button onclick="Entre()">Entre</button>
-        </a>
-      </div>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
