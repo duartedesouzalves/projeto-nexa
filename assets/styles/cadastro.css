@@ -6,14 +6,17 @@
 
 .fundo {
   min-height: 100vh;
-  background: #dee1ff;
+  padding: 8%;
   width: 100%;
   height: 100%;
+  background: #dee1ff;
 }
 
 .logo {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .cadastro button {
@@ -22,7 +25,6 @@
   align-items: center;
   height: 70px;
   width: 500px;
-  margin: 0;
   color: white;
   background-color: #42a1a1;
   border-radius: 60px;
