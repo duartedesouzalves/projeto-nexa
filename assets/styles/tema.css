@@ -23,8 +23,8 @@
 
 .perfil button {
   width: 4vw;
-  border-radius: 50%;
-  background: #bfbaff;
+  border-radius: 55%;
+  background: #7672ae;
   border: #b9bef2;
 }
 
@@ -35,7 +35,7 @@
   display: flex;
   border-radius: 10px;
   justify-content: flex-end;
-  background-color: #dee1ff;
+  background-color: #7672ae;
   border: 1px #aaa8c5 solid;
   align-items: center;
 }

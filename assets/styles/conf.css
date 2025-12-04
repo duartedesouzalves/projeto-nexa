@@ -22,7 +22,8 @@
 }
 .perfil button {
   width: 4vw;
-  background-color: #c4c0fb;
+  background-color: #7672ae;
+  border-radius: 55%;
   border: 1px#C4C0FB solid;
 }
 .icons img {
@@ -39,7 +40,9 @@
 
 .funcoes button {
   justify-content: flex-end;
-  background-color: #c4c0fb;
+  background-color: #7672ae;
+  border-radius: 55%;
+  padding: 5px;
   border: 1px#C4C0FB solid;
 }
 
@@ -70,10 +73,14 @@
   padding: 4px;
   align-items: center;
   margin-bottom: 4px;
-  color: #a8a8a8;
+  color: #848484;
   font-family: "Libre Baskerville", serif;
 }
 
+.nomes button {
+  background-color: #7672ae;
+  border-radius: 55%;
+}
 .conversa {
   position: relative;
   display: flex;

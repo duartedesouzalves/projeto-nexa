@@ -10,7 +10,6 @@
   width: 100%;
 }
 
-/* MENU LATERAL */
 .area {
   display: flex;
   width: 300px;
@@ -20,7 +19,6 @@
   padding: 15px;
 }
 
-/* HEADER DO MENU */
 .icones {
   display: flex;
   align-items: center;
@@ -28,7 +26,8 @@
 
 .perfil button {
   width: 4vw;
-  background-color: #c4c0fb;
+  background-color: #7672ae;
+  border-radius: 70%;
   border: 1px #c4c0fb solid;
 }
 
@@ -41,11 +40,12 @@
 
 .funcoes button {
   justify-content: flex-end;
-  background-color: #c4c0fb;
+  background-color: #7672ae;
+  border-radius: 55%;
+  padding: 5px;
   border: 1px #c4c0fb solid;
 }
 
-/* PROFISSIONAIS */
 .Profissionais {
   width: 100%;
   flex-direction: column;
@@ -58,13 +58,12 @@
 
 .lista {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 10px;
+  padding: 5px;
+  justify-content: flex-start;
+  font-size: 17px;
   color: #736eb3;
 }
 
-/* lista de nomes */
 .chat-header {
   list-style: none;
   padding: 0;
@@ -75,6 +74,8 @@
   width: 20%;
   margin-bottom: 3px;
   gap: 15px;
+  background-color: #7672ae;
+  border-radius: 55%;
   color: #7773b1;
 }
 
@@ -83,13 +84,12 @@
   align-items: center;
   background-color: #dee1ff;
   border: 1px #dee1ff solid;
-  color: #7773b1;
+  color: #7672ae;
   gap: 10px;
   margin-bottom: 4px;
   font-weight: bold;
 }
 
-/* ÍCONE DO TELEFONE */
 .conversa {
   position: relative;
   display: flex;
@@ -108,7 +108,6 @@
   height: 50px;
 }
 
-/* CONTEÚDO PRINCIPAL */
 .segundo_container {
   flex: 1;
   background: #d9f7ff;
@@ -116,7 +115,6 @@
   width: 100%;
 }
 
-/* BUSCA */
 .busca {
   display: flex;
   width: 100%;
@@ -140,7 +138,6 @@
   background: transparent;
 }
 
-/* GRID PRINCIPAL */
 .quadrado-roxo {
   display: grid;
   background-color: #b9bef2;
@@ -154,7 +151,6 @@
   margin-left: 40px;
 }
 
-/* COLUNA 1 */
 .coluna1 {
   display: flex;
   flex-direction: column;
@@ -192,7 +188,6 @@
   color: #7672ae;
 }
 
-/* CARD PROFISSIONAL */
 .cardProfissional {
   display: flex;
   text-align: center;
@@ -214,7 +209,6 @@
   width: 200px;
 }
 
-/* COLUNA 2 */
 .coluna2 {
   display: flex;
   flex-direction: column;
@@ -238,7 +232,6 @@
   font-family: "Cantora One", sans-serif;
 }
 
-/* COLUNA 3 */
 .coluna3 {
   display: flex;
   flex-direction: column;
@@ -285,7 +278,6 @@
   height: 100%;
 }
 
-/* CARD GRANDE */
 .cardDestaque {
   display: flex;
   background: #ffeef4;

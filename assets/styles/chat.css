@@ -23,7 +23,8 @@
 }
 .perfil button {
   width: 4vw;
-  background-color: #c4c0fb;
+  background-color: #7672ae;
+  border-radius: 55%;
   border: 1px#C4C0FB solid;
 }
 .fotoprof {
@@ -33,7 +34,8 @@
 .fotoprof button {
   display: flex;
   width: 3vw;
-  background-color: #dee1ff;
+  background-color: #7672ae;
+  border-radius: 55%;
   border: 1px #dee1ff solid;
 }
 .icons img {
@@ -48,7 +50,9 @@
 
 .funcoes button {
   justify-content: flex-end;
-  background-color: #c4c0fb;
+  background-color: #7672ae;
+  border-radius: 55%;
+  padding: 5px;
   border: 1px#C4C0FB solid;
   width: 90%;
 }
